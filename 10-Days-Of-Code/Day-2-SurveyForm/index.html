@@ -44,7 +44,7 @@
         .form-control input,
         .form-control select,
         .form-control textarea {
-            border: 1px solid #777;
+            border: 1px solid grey;
             border-radius: 2px;
             font-family: inherit;
             padding: 10px;
@@ -61,8 +61,8 @@
  
         /* BUTTON STYLING */
         button {
-            background-color: #05c46b;
-            border: 1px solid #777;
+            background-color: aliceblue;
+            border: 1px solid burlywood;
             border-radius: 2px;
             font-family: inherit;
             font-size: 21px;
@@ -78,26 +78,126 @@
 </head>
 
 <body>
-    <h1>MOOD CHECK FORM</h1>
+    <h1><strong> MINDFULLNESS CHECK-IN</strong></h1>
 
-    <!--form creation-->
+    <!--FORM CREATION-->
     <form id="form">
         
         <!-- Form Details-->
         <div class="form-control">
             <label for="name" id="label-name">
-                NAME:
+                Full Name:
             </label>
 
             <!--user input-->
             <input type="text"
                     id="name" 
-                    placeholder="Enter Name"/>
+                    placeholder="Enter Full Name"/>
         </div>
 
         <div class="form-control">
+            <label for="role" id="label-role">
+                How Is Your Day Currently Going?
+            </label>
 
+            <!--OPTIONS: for dropdown menu-->
+            <select name="role" id="role">
+                <option value="great">GREAT</option>
+                <option value="notgreat">Not So Great</option>
+                <option value="avg">Average</option>
+                <option value="belowavg">Below Average</option>
+                <!--    <option value="">Horrible</option>  -->
+            </select>
+            
         </div>
+
+        <div class="form-control">
+            <label>
+                Have you Practiced Mindfulness Today?
+            </label>
+
+            <!--RADIO BUTTONS-->
+            <label for="yes-1">
+                <input type="radio" id="yes-1" name="yes">
+                YES
+            </label>
+
+            <label for="no-2">
+                <input type="radio" id="no-1" name="no">
+                NO
+            </label>
+
+            <label for="maybe-3">
+                <input type="radio" id="maybe-3" name="maybe">
+                MAYBE
+            </label>
+        </div>
+
+        <div class="form-control">
+            <!--<label>
+                How did you Practiced Mindfulness Today?
+            </label>
+        -->
+            <!--CHECKBOX-->
+            <label>Mindfullness Activities Done Today:
+                <small>(Check any that apply.)</small>
+            </label>
+            <!--CHECKBOX INPUTS-->
+            <label for="input-1">
+                <input type="checkbox" name="input">Meditation.</input>
+            </label>
+
+            <label for="input-2">
+                <input type="checkbox" name="input">Mindful Thinking.</input>
+            </label>
+
+            <label for="input-3">
+                <input type="checkbox" name="input">Breathing Exercise.</input>
+            </label>
+            
+            <label for="input-4">
+                <input type="checkbox" name="input">Yoga or Stretching </input>
+            </label>
+            
+            <label for="input-5">
+                <input type="checkbox" name="input">Gardening </input>
+            </label>
+
+            <label for="input-6">
+                <input type="checkbox" name="input">Journaling </input>
+            </label>
+
+            <label for="input-7">
+                <input type="checkbox" name="input">OTHER: </input>
+            </label>
+
+            <textarea name="other-block" id="other-notes" placeholder="Activity"></textarea>
+            
+            <!--
+            <label for="input-N?A">
+                <input type="checkbox" name="input">N/A </input>
+            </label>
+
+            -->
+            
+
+        </div>    
+
+        <!-- MULTI-LINE-COMMENTS-->
+        <div class="form-control">
+            <label for="notes">
+                NOTES:
+            </label>
+
+            <textarea name="notes" id="comment"
+                        placeholder="Enter Notes from the Day Here:">
+            </textarea>
+        </div>
+
+        <!--SUBMIT BUTTON-->
+        <button type="submit" value="submit">
+            Submit
+        </button>
 
     </form>
 
