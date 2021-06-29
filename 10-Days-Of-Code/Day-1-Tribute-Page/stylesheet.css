@@ -71,7 +71,7 @@ justify-content: center;
 }
 
 .vertical-line {
-    border-left: 4px solid #3e2f13;
+  border-left: 4px solid #3e2f13;
   height: 80px;
   position: relative;
   left: 50%;
