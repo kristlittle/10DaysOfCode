@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="decription" content=" ">
+    <meta name="keywords" content="HTML,CSS, JavaScript, Countdown Timer">
+    <meta name="author" content="Kristoff L.">
+    <meta name="viewpoint" content="width=devicewidth", initial-scale="1.0">
+
+    <title> Countdown Timer </title>
+</head>
+
+<!-- ** INTERNAL STYLING  **-->
+    
+    <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      background-color: aliceblue;
+      /* **FaILURE TO LOAD GIF INTO BACKGROUND ** background-image: url("wall#2.gif"); */
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
+
+    
+    .topleft {
+      position: absolute;
+      top: 0;
+      left: 8px;
+    }
+
+    .botleft {
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+
+    }
+        
+    .middle {
+      position: absolute;
+      font-weight: bold;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    hr {
+      margin: auto;
+      width: 40%;
+    }
+    </style>
+    
+    
+    <body>  
+    <div class="bgimage">
+      <div class="topleft">
+        <p>Simple Countdown</p>
+      </div>
+
+      <div class="middle">
+        <h1>COUNTDOWN TIMER</h1>
+        <hr>
+        <p id="time" style="font-size:30px"></p>
+      </div>
+
+      <div class="botleft">
+        <p>10 DAYS OF CODE -- DAY #6 -- Countdown Timer. </p>
+      </div>
+    </div>
+    
+    
+    <!-- ** JAVASCRIPT SECTION ** -->   
+    <script>
+    //counting to jul 10, 2022
+    var countDownDate = new Date("JUL 10, 2022 15:37:25").getTime();
+    
+    //Count update
+    var countdownfunction = setInterval(function() {
+    
+      //today date & time
+      var now = new Date().getTime();
+      
+      //distance between now & date
+      var dist = countDownDate - now;
+      
+      // Time calculations - days, hours, minutes and seconds
+      var days = Math.floor(dist / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var mins = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
+      var secs = Math.floor((dist % (1000 * 60)) / 1000);
+      
+      // Output in ** id="time" **
+      document.getElementById("time").innerHTML = days + " Day(s) " + hours + " Hour(s) "
+      + mins + " Min(s) " + secs + " Sec(s) ";
+      
+      // If timer done check 
+      if (dist < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("time").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+    
+
+    </body>
+</html>
+
+
+
+<!-- ** DAYS OF CODE -- DAY 6 ** -->
+<!-- KRISTOFF L.  © Kristoff L. All Rights Reserved. -->
