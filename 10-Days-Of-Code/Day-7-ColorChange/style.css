@@ -1,0 +1,28 @@
+/* STYLESHEET */
+
+#back{
+    background-color: aliceblue;
+    color: coral;
+    font-family: sans-serif;
+    font-size: 26px;
+    width: 600px;
+    height: 400px;
+    margin: 50px auto 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button{
+    text-align: center;
+    width: 200px;
+    height: 48px;
+    margin: 50px auto 50px;
+    color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    background: black;
+    border-radius: 6px;
+    border-style: none;
+    display: block;
+}
