@@ -1,0 +1,62 @@
+/* STYLESHEET */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+  }
+    
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: aliceblue;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 60px;
+    color: cornflowerblue;
+    font-weight: 600;
+    font-size: 3em;
+    
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .display {
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 15%;
+    margin-right: 16%;
+  }
+
+  .button-container {
+      text-align: center;
+      margin-top: 15px;
+  }
+
+  .button {
+      background-color: darkgoldenrod;
+      color: bisque;
+      padding: 8px;
+      border-radius: 6px;
+      font-size: 26px;
+  }
+
+  .button:hover {
+      background-color: darkorange;
+      cursor: pointer;
+  }
+  
