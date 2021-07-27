@@ -15,37 +15,95 @@
 
 <!-- INTERNAL SYLE SHEET-->
 <style>
-        
-    /*BODY STYLING*/
-    body{
+    /* * STYLING*/
+    *
+    {
         background-color: aliceblue;
         font-family: sans-serif;
         text-align: center;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
     /*BODY STYLING*/
+    body
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: gainsboro;
+    }
+    
+    /*LIST STYLING */
+    .list
+    {
+      position: relative;
+      background: burlywood;
+      width: 400px;
+    }
+
+    /**/
+    .list h2
+    {
+      background: lightskyblue;
+      color: beige;
+      padding: 10px 30px;
+      font-weight: 900;
+    }
     
 </style>
 
+  <div class="list">
+      <h2>HTML CSS To Do List</h2>
+      
+        <ul>
+          <li>  
+            <label>
+              <input type="checkbox" name="">
+              <p> Walk Dog </p>   
+            </label>
+          </li>
 
-<div class="list">
-    <h2>HTML CSS To Do List</h2>
-     
-      <ul>
-        <li class="prev">&#10094;</li>
-        <li class="next">&#10095;</li>
-        <li>JULY<br><span style="font-size:18px">2021</span></li>
-      </ul>
-</div>
-     
-  <ul class="days">
-  <li>  </li>
-  <li> </li>
-  <li> </li>
-  </ul>
+          <label>
+            <input type="checkbox" name="">
+              <p> Clean Room</p>
+            </label>
+          </li>
 
+          <label>
+            <input type="checkbox" name="">
+            <p> Clean Room</p>
+            </label>
+          </li>
 
+          <label>
+            <input type="checkbox" name="">
+            <p> Read 10 mins</p>
+          </label>
+          </li>
 
+          <label>
+            <input type="checkbox" name="">
+            <p> Walk 2 miles </p>
+          </label>
+          </li>
+
+          <label>
+            <input type="checkbox" name="">
+            <p> Stretch / Yoga </p>
+          </label>
+          </li>
+
+          <label>
+            <input type="checkbox" name="">
+            <p> ...</p>
+          </label>
+          </li>           
+              
+        </ul>
+  </div>
 </head>
 
 
