@@ -41,10 +41,10 @@
     {
       position: relative;
       background: burlywood;
-      width: 400px;
+      width: 800px;
     }
 
-    /**/
+    /*LIST & PAGE HEADING STYLING*/
     .list h2
     {
       background: lightskyblue;
@@ -52,11 +52,37 @@
       padding: 10px 30px;
       font-weight: 900;
     }
+
+     /*LISTS STYLING*/
+     .list ul li
+    {
+      position: relative;
+      padding: 18px;
+      list-style: none;
+      border: 1px solid gray;
+    }
+     
+    /*LISTS STYLING
+     .list ul li:last-child
+    {
+      border-bottom: none;
+    }
+    */
     
+     /*LISTS & LABEL STYLING */
+     .list ul li label
+    {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+   
 </style>
 
   <div class="list">
-      <h2>HTML CSS To Do List</h2>
+      <h2>HTML TO DO LIST</h2>
       
         <ul>
           <li>  
@@ -65,42 +91,35 @@
               <p> Walk Dog </p>   
             </label>
           </li>
-
+           
+          <li>
           <label>
             <input type="checkbox" name="">
               <p> Clean Room</p>
             </label>
           </li>
-
-          <label>
-            <input type="checkbox" name="">
-            <p> Clean Room</p>
-            </label>
-          </li>
-
+          
+          <li>
           <label>
             <input type="checkbox" name="">
             <p> Read 10 mins</p>
           </label>
           </li>
 
+          <li>
           <label>
             <input type="checkbox" name="">
             <p> Walk 2 miles </p>
           </label>
           </li>
 
+          <li>
           <label>
+            
             <input type="checkbox" name="">
             <p> Stretch / Yoga </p>
           </label>
-          </li>
-
-          <label>
-            <input type="checkbox" name="">
-            <p> ...</p>
-          </label>
-          </li>           
+          </li> 
               
         </ul>
   </div>
